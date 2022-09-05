@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 import React, { Component } from 'react';
 // @ts-ignore
 import * as ReactDOM from 'react-dom';
@@ -29,6 +29,7 @@ class Register extends Component {
     
     // @ts-ignore
     if(document.getElementsByName('username')[0].value !="" && document.getElementsByName('password')[0].value !=""  && document.getElementsByName('password2')[0].value !=""  && document.getElementsByName('nome')[0].value !=""  && document.getElementsByName('password')[0].value == document.getElementsByName('password2')[0].value){
+      // @ts-ignore
       let username = document.getElementsByName('username')[0].value
       let password = document.getElementsByName('password')[0].value
       let nome = document.getElementsByName('nome')[0].value
@@ -39,15 +40,6 @@ class Register extends Component {
     }else{
       alert('erro');
     }
-    // password1 = document.getElementsByName('password')[0].value
-    // password2 = document.getElementsByName('password2')[0].value
-    // nome = document.getElementsByName('nome')[0].value
-    
-    // // check if the passwords are the same
-    // if(password1 == password2){{
-    //   // USUARIOS.push({nome: document.getElementsByName('nome')[0].value, username: document.getElementsByName('username')[0].value, password: document.getElementsByName('password')[0].value})
-    //   alert("registrado!")
-    // }
 
 
   }
